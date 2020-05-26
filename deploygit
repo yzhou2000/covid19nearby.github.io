@@ -1,5 +1,5 @@
 git init
 git remote add origin git@github.com:yzhou2000/yzhou2000.github.io.git
 git add --all . 
-git commit -m "ttttt" 
+git commit -m "t" 
 git push origin master
