@@ -25053,18 +25053,18 @@ jr:function(){var t=0,s=P.ah(u.z),r=1,q,p=[],o=this,n,m,l,k,j,i,h,g,f,e,d,c,b
 var $async$jr=P.a9(function(a,a0){if(a===1){q=a0
 t=r}while(true)switch(t){case 0:r=3
 t=6
-return P.as(G.a7t("http://api.ipstack.com/check?access_key=59d1a13ca47d85f624da51aec4b53449&format=1"),$async$jr)
+return P.as(G.a7t("http://ip-api.com/json"),$async$jr)
 case 6:n=a0
 if(n.b===200){j=n
 j=C.an.cd(0,B.El(U.Ef(j.e).c.a.h(0,"charset")).cd(0,j.x))
 i=J.a6(j)
-h=i.h(j,"ip")
+h=i.h(j,"query")
 g=i.h(j,"zip")
 f=i.h(j,"city")
-e=i.h(j,"country_code")
-d=i.h(j,"region_code")
+e=i.h(j,"countryCode")
+d=i.h(j,"region")
 i.h(j,"country_name")
-o.cx=new F.Jd(h,f,g,d,i.h(j,"region_name"),e)
+o.cx=new F.Jd(h,f,g,d,i.h(j,"regionName"),e)
 o.aN(new F.Kz(o))}else{P.f9(n.b)
 j=n
 P.f9(B.El(U.Ef(j.e).c.a.h(0,"charset")).cd(0,j.x))}t=7
