@@ -23636,17 +23636,17 @@ lr:function(a){return this.HZ(a)},
 HZ:function(a){var t=0,s=P.aj(u.o3),r,q,p,o,n,m,l,k,j
 var $async$lr=P.af(function(b,c){if(b===1)return P.ag(c,s)
 while(true)switch(t){case 0:t=3
-return P.ar(a.kN("GET","http://ip-api.com/json",null),$async$lr)
+return P.ar(a.kN("GET","http://api.ipstack.com/check?access_key=59d1a13ca47d85f624da51aec4b53449&format=1",null),$async$lr)
 case 3:j=c
 if(j.b===200){q=C.b0.cJ(0,B.a3f(U.a1O(j.e).c.a.h(0,"charset")).cJ(0,j.x))
 p=J.a7(q)
-o=p.h(q,"query")
+o=p.h(q,"ip")
 n=p.h(q,"zip")
 m=p.h(q,"city")
-l=p.h(q,"countryCode")
-k=p.h(q,"region")
+l=p.h(q,"country_code")
+k=p.h(q,"region_code")
 p.h(q,"country_name")
-p.h(q,"regionName")
+p.h(q,"region_name")
 r=new F.nh(o,m,n,k,l)
 t=1
 break}else throw H.b(P.tQ("Failed to load IP Address"))
