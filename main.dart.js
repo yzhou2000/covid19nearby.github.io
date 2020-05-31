@@ -6585,7 +6585,7 @@ _.f=f},o0:function o0(a){this.a=a},v1:function v1(a){var _=this
 _.d=!1
 _.a=_.e=null
 _.b=a
-_.c=null},If:function If(a){this.a=a},Ig:function Ig(a){this.a=a},cK:function cK(){},nC:function nC(){},
+_.c=null},If:function If(){},Ig:function Ig(a){this.a=a},cK:function cK(){},nC:function nC(){},
 dT:function(a,b){var t,s,r
 if(a==null)return b
 t=b.a
@@ -23731,7 +23731,7 @@ k.h(l,"country_name")
 g=new F.GV(j,h,i,f,k.h(l,"regionName"),g)
 o.e=g
 P.e7(g.i(0))
-o.aK(new F.If(o))}else{P.e7(n.b)
+o.aK(new F.If())}else{P.e7(n.b)
 l=n
 P.e7(B.Xf(U.Wn(l.e).c.a.h(0,"charset")).cA(0,l.x))}r=1
 t=5
@@ -23751,7 +23751,7 @@ return P.ai($async$kq,s)},
 N:function(a){var t=null,s=L.Lm("The COVID-19 Cases Near You",t),r=S.mp(t,t,t,C.j,t,t,C.W),q=u.t
 return new M.oM(new E.md(s,new P.as(1/0,56),t),M.tf(t,this.d?new T.i8(C.aG,t,t,T.U0(H.c([new U.my(t,t,t,t,t,t),new T.fj(t,10,t,t),L.Lm("Loading your location infomation ...",A.l1(t,t,C.vz,t,t,t,t,t,t,t,t,t,t,t,t,t,!0,t,t,t,t,t,t))],q),C.nt,C.oo,C.kZ),t):T.U0(H.c([L.Lm("You are in "+H.a(this.e.b)+" "+H.a(this.e.e)+" ",A.l1(t,t,t,t,t,t,t,t,t,t,t,t,t,C.c0,t,t,!0,t,t,t,t,t,t))],q),C.hs,C.op,C.kZ),t,t,r,t,C.bw,t),t)}}
 F.If.prototype={
-$0:function(){this.a.d=!1},
+$0:function(){},
 $S:0}
 F.Ig.prototype={
 $0:function(){this.a.d=!1},
