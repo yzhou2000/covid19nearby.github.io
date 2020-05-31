@@ -6598,12 +6598,11 @@ if(s-t>=c)return t
 t=s+1}s=C.b.dP(a,b)
 for(;s!==-1;){r=s===0?0:C.b.lI(a,"\n",s-1)+1
 if(c===s-r)return r
-s=C.b.em(a,b,s+1)}return null}},F={nh:function nh(a,b,c,d,e){var _=this
+s=C.b.em(a,b,s+1)}return null}},F={nh:function nh(a,b,c,d){var _=this
 _.a=a
 _.b=b
 _.c=c
-_.d=d
-_.f=e},nZ:function nZ(a){this.a=a},uV:function uV(a){var _=this
+_.d=d},nZ:function nZ(a){this.a=a},uV:function uV(a){var _=this
 _.a=_.d=null
 _.b=a
 _.c=null},I2:function I2(){},cJ:function cJ(){},nA:function nA(){},
@@ -23626,28 +23625,25 @@ b=r}}C.c.m(l.b,b,a)}}
 B.od.prototype={}
 F.nh.prototype={
 i:function(a){var t=this
-return"Your current location { IP : "+H.a(t.a)+" , ZIP : "+H.a(t.c)+", City :"+H.a(t.b)+" , State: "+H.a(t.d)+",Country: "+H.a(t.f)+" }"}}
+return"Your current location { ZIP : "+H.a(t.b)+", City :"+H.a(t.a)+" , State: "+H.a(t.c)+",Country: "+H.a(t.d)+" }"}}
 F.nZ.prototype={
 aK:function(){return new F.uV(C.n)}}
 F.uV.prototype={
 aT:function(){this.bc()
 this.d=this.lr(new O.CZ(P.bC(u.sZ)))},
 lr:function(a){return this.HZ(a)},
-HZ:function(a){var t=0,s=P.aj(u.o3),r,q,p,o,n,m,l,k,j
+HZ:function(a){var t=0,s=P.aj(u.o3),r,q,p,o,n,m,l
 var $async$lr=P.af(function(b,c){if(b===1)return P.ag(c,s)
 while(true)switch(t){case 0:t=3
-return P.ar(a.kN("GET","http://api.ipstack.com/check?access_key=59d1a13ca47d85f624da51aec4b53449&format=1",null),$async$lr)
-case 3:j=c
-if(j.b===200){q=C.b0.cJ(0,B.a3f(U.a1O(j.e).c.a.h(0,"charset")).cJ(0,j.x))
+return P.ar(a.kN("GET","https://geolocation-db.com/json/",null),$async$lr)
+case 3:l=c
+if(l.b===200){q=C.b0.cJ(0,B.a3f(U.a1O(l.e).c.a.h(0,"charset")).cJ(0,l.x))
 p=J.a7(q)
-o=p.h(q,"ip")
-n=p.h(q,"zip")
-m=p.h(q,"city")
-l=p.h(q,"country_code")
-k=p.h(q,"region_code")
+o=p.h(q,"postal")
+n=p.h(q,"city")
+m=p.h(q,"country_code")
 p.h(q,"country_name")
-p.h(q,"region_name")
-r=new F.nh(o,m,n,k,l)
+r=new F.nh(n,o,p.h(q,"state"),m)
 t=1
 break}else throw H.b(P.tQ("Failed to load IP Address"))
 case 1:return P.ah(r,s)}})
@@ -23656,7 +23652,7 @@ N:function(a){var t=null,s=L.L8("The COVID-19 Cases Near You",t)
 return new M.oK(new E.mb(s,new P.av(1/0,56),t),new T.i6(C.aE,t,t,new B.jU(this.d,new F.I2(),t,u.wF),t),t)}}
 F.I2.prototype={
 $2:function(a,b){var t=null,s=b.b
-if(s!=null)return L.L8(" You are in "+H.a(s.b)+", "+H.a(s.d),t)
+if(s!=null)return L.L8(" You are in "+H.a(s.a)+", "+H.a(s.c),t)
 else{s=b.c
 if(s!=null)return L.L8(H.a(s),t)}return new U.mv(t,t,t,t,t,t)}}
 X.cS.prototype={
