@@ -1,5 +1,5 @@
 git init
 git remote add origin git@github.com:yzhou2000/yzhou2000.github.io.git
 git add --all . 
-git commit -m "only taking out service worker section" 
+git commit -m "rebuild after taking out service worker section" 
 git push origin master
