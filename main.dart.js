@@ -6619,12 +6619,11 @@ t=1
 break}else throw H.b(P.iN("Failed to load Covid County Cases"))
 case 1:return P.ae(r,s)}})
 return P.af($async$TL,s)},
-du:function du(a,b,c,d,e){var _=this
+du:function du(a,b,c,d){var _=this
 _.a=a
-_.b=b
-_.c=c
-_.d=d
-_.e=e},
+_.d=b
+_.e=c
+_.f=d},
 uQ:function uQ(a){this.c=null
 this.a=a},
 G3:function G3(a){this.a=a},
@@ -6880,9 +6879,9 @@ case 1:return P.ae(r,s)}})
 return P.af($async$TP,s)},
 dv:function dv(a,b,c,d){var _=this
 _.a=a
-_.b=b
-_.c=c
-_.d=d},
+_.d=b
+_.e=c
+_.f=d},
 uR:function uR(a){this.c=null
 this.a=a},
 G5:function G5(a){this.a=a},
@@ -6906,9 +6905,9 @@ case 1:return P.ae(r,s)}})
 return P.af($async$TT,s)},
 dw:function dw(a,b,c,d){var _=this
 _.a=a
-_.b=b
-_.c=c
-_.d=d},
+_.d=b
+_.e=c
+_.f=d},
 uS:function uS(a){this.c=null
 this.a=a},
 G7:function G7(a){this.a=a},
@@ -24950,9 +24949,7 @@ if(r<s){m=l.b[r]
 if(t.$2(a,m)>0){C.b.m(l.b,b,m)
 b=r}}C.b.m(l.b,b,a)}}
 B.po.prototype={}
-B.du.prototype={
-i:function(a){var t=this
-return"Your current covid case info { County: "+H.a(t.d)+",State: "+H.a(t.e)+", casedate : "+H.a(t.a)+" , confirmed case : "+H.a(t.b)+", deaths :"+H.a(t.c)+" }"}}
+B.du.prototype={}
 B.uQ.prototype={
 K:function(a){var t=T.p4(a,u._).b.b,s=t.a
 return M.MM(E.EM(L.cN(H.a(s)+" County Covid status",null)),B.I8(new B.G3(this),B.TL(new O.ko(P.bm(u.sZ)),t.b,s),u.bm))}}
@@ -24968,21 +24965,22 @@ t.c=s
 return B.Vd(new B.G2(t),J.bo(s),C.aT)}}
 B.G2.prototype={
 $2:function(a,b){var t=null,s=this.a
-return M.iF(t,new T.d6(C.R,t,t,L.cN(C.c.M(C.c.M("As of ",J.R(s.c,b).a)+" ,",J.R(s.c,b).d)+" county has "+J.bp(J.R(s.c,b).b)+" cases, and "+J.bp(J.R(s.c,b).c)+" deaths",t),t),t,t,t,50,t,t,t)},
+return M.iF(t,new T.d6(C.R,t,t,L.cN(C.c.M(C.c.M("As of ",J.R(s.c,b).a)+",",J.R(s.c,b).f)+" county has "+J.bp(J.R(s.c,b).d)+" new cases and "+J.bp(J.R(s.c,b).e)+" new deaths",t),t),t,t,t,50,t,t,t)},
 $C:"$2",
 $R:2}
 B.TM.prototype={
-$1:function(a){var t=J.a6(a),s=t.h(a,"date"),r=t.h(a,"county"),q=t.h(a,"state")
-return new B.du(s,t.h(a,"cases"),t.h(a,"deaths"),r,q)},
+$1:function(a){var t=J.a6(a),s=t.h(a,"date"),r=t.h(a,"county")
+t.h(a,"state")
+t.h(a,"cases")
+t.h(a,"deaths")
+return new B.du(s,t.h(a,"new cases"),t.h(a,"new deaths"),r)},
 $S:71}
 B.TN.prototype={
-$1:function(a){return a.d==this.a&&P.UJ(a.a).a>new P.co(Date.now(),!1).A(0,P.cF(-15,0,0)).a}}
+$1:function(a){return a.f==this.a&&P.UJ(a.a).a>new P.co(Date.now(),!1).A(0,P.cF(-15,0,0)).a}}
 B.TO.prototype={
 $2:function(a,b){return J.bS(b.a,a.a)},
 $S:72}
-T.dv.prototype={
-i:function(a){var t=this
-return"Your current covid case info { Metro: "+H.a(t.d)+", casedate : "+H.a(t.a)+" , confirmed case : "+H.a(t.b)+", deaths :"+H.a(t.c)+" }"}}
+T.dv.prototype={}
 T.uR.prototype={
 K:function(a){var t=T.p4(a,u._).b.b.c
 return M.MM(E.EM(L.cN(H.a(t)+" Metro Covid status",null)),B.I8(new T.G5(this),T.TP(new O.ko(P.bm(u.sZ)),t),u.ov))}}
@@ -24998,21 +24996,21 @@ t.c=s
 return B.Vd(new T.G4(t),J.bo(s),C.aT)}}
 T.G4.prototype={
 $2:function(a,b){var t=null,s=this.a
-return M.iF(t,new T.d6(C.R,t,t,L.cN(C.c.M(C.c.M("As of ",J.R(s.c,b).a)+" ,",J.R(s.c,b).d)+" metro has "+J.bp(J.R(s.c,b).b)+" cases, and "+J.bp(J.R(s.c,b).c)+" deaths",t),t),t,t,t,50,t,t,t)},
+return M.iF(t,new T.d6(C.R,t,t,L.cN(C.c.M(C.c.M("As of ",J.R(s.c,b).a)+",",J.R(s.c,b).f)+" metro has "+J.bp(J.R(s.c,b).d)+" new cases and "+J.bp(J.R(s.c,b).e)+" new deaths",t),t),t,t,t,50,t,t,t)},
 $C:"$2",
 $R:2}
 T.TQ.prototype={
 $1:function(a){var t=J.a6(a),s=t.h(a,"date"),r=t.h(a,"msa")
-return new T.dv(s,t.h(a,"cases"),t.h(a,"deaths"),r)},
+t.h(a,"cases")
+t.h(a,"deaths")
+return new T.dv(s,t.h(a,"new cases"),t.h(a,"new deaths"),r)},
 $S:73}
 T.TR.prototype={
-$1:function(a){return a.d==this.a&&P.UJ(a.a).a>new P.co(Date.now(),!1).A(0,P.cF(-15,0,0)).a}}
+$1:function(a){return a.f==this.a&&P.UJ(a.a).a>new P.co(Date.now(),!1).A(0,P.cF(-15,0,0)).a}}
 T.TS.prototype={
 $2:function(a,b){return J.bS(b.a,a.a)},
 $S:74}
-T.dw.prototype={
-i:function(a){var t=this
-return"Your current covid case info { State: "+H.a(t.d)+", casedate : "+H.a(t.a)+" , confirmed case : "+H.a(t.b)+", deaths :"+H.a(t.c)+" }"}}
+T.dw.prototype={}
 T.uS.prototype={
 K:function(a){var t=T.p4(a,u._).b.b
 return M.MM(E.EM(L.cN(H.a(t.b)+" Covid status",null)),B.I8(new T.G7(this),T.TT(new O.ko(P.bm(u.sZ)),t.d),u.gj))}}
@@ -25028,15 +25026,17 @@ t.c=s
 return B.Vd(new T.G6(t),J.bo(s),C.aT)}}
 T.G6.prototype={
 $2:function(a,b){var t=null,s=this.a
-return M.iF(t,new T.d6(C.R,t,t,L.cN(C.c.M(C.c.M("As of ",J.R(s.c,b).a)+" ,",J.R(s.c,b).d)+" state has "+J.bp(J.R(s.c,b).b)+" cases, and "+J.bp(J.R(s.c,b).c)+" deaths",t),t),t,t,t,50,t,t,t)},
+return M.iF(t,new T.d6(C.R,t,t,L.cN(C.c.M(C.c.M("As of ",J.R(s.c,b).a)+",",J.R(s.c,b).f)+" state has "+J.bp(J.R(s.c,b).d)+" new cases and "+J.bp(J.R(s.c,b).e)+" new deaths",t),t),t,t,t,50,t,t,t)},
 $C:"$2",
 $R:2}
 T.TU.prototype={
 $1:function(a){var t=J.a6(a),s=t.h(a,"date"),r=t.h(a,"state")
-return new T.dw(s,t.h(a,"cases"),t.h(a,"deaths"),r)},
+t.h(a,"cases")
+t.h(a,"deaths")
+return new T.dw(s,t.h(a,"new cases"),t.h(a,"new deaths"),r)},
 $S:75}
 T.TV.prototype={
-$1:function(a){return a.d==this.a&&P.UJ(a.a).a>new P.co(Date.now(),!1).A(0,P.cF(-15,0,0)).a}}
+$1:function(a){return a.f==this.a&&P.UJ(a.a).a>new P.co(Date.now(),!1).A(0,P.cF(-15,0,0)).a}}
 T.TW.prototype={
 $2:function(a,b){return J.bS(b.a,a.a)},
 $S:76}
