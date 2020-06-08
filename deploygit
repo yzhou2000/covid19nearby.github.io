@@ -2,8 +2,4 @@ git init
 git remote add origin git@github.com:yzhou2000/yzhou2000.github.io.git
 git add --all . 
 git commit -m "move getip to futurebuilder " 
-<<<<<<< HEAD
 git push origin master
-=======
-git push origin master
->>>>>>> 7835dafcf77c29f84c7df897bb00eee50d2a4d62
